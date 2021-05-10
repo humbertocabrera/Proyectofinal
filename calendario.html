@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario</title>
+
+        <link rel="stylesheet" href="calendar-style.css">
+    </head>
+    <body>
+        
+        <div id="contenedor">
+            <div id="header">
+                <div id="Help">
+                    <div>
+                        <button id="ayuda">Menú</button>
+                        <div class="modal-container" id="modal-container">
+                            <div class="modal">
+                                <h2>Guía de Colores</h2>
+                                <p>
+                                    Rojo: Evento Familiar<br><br>
+                                    Azul: Evento Deportivo<br><br>
+                                    Amarillo: Evento Cultural<br><br>
+                                    Verde: Evento Social<br><br>
+                                </p>
+                                <button id="CerrarModal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="CambioDeMes"></div>
+                <div>
+                    <button id="MesPrev">&#9664;</button>
+                    <button id="MesSig">&#9654;</button>
+                </div>
+            </div>
+            
+            <div id="semana">
+                <div>Domingo</div>
+                <div>Lunes</div>
+                <div>Martes</div>
+                <div>Miercoles</div>
+                <div>Jueves</div>
+                <div>Viernes</div>
+                <div>Sabado</div>
+            </div>
+
+            <div id="calendario"></div>
+        </div>
+
+        <div class="Evento-modal-container" id="Evento-modal-container">
+            <div class="Eventomodal">
+                <h2>Evento</h2>
+                <p id="espacioEvento">
+                    
+                </p>
+                <button id="CerrarEventoModal">Cerrar</button>
+            </div>
+        </div>
+
+
+        
+        <script src="./calendar-script.js"></script>
+    </body>
+</html>
